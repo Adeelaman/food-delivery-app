@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FDA - Documentation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="assets/images/favicon.png">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .scr
+        {
+            width:800px !important;
+            height:auto;
+            margin:10px 0px 18px 0px;
+            border-radius:4px;
+            box-shadow: 0px 0px 15px 0px #7c7c7c21;
+        }
+        .text-primary
+        {
+            color:#CB202D !important;
+        }
+    </style>
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <!-- <span aria-hidden="true" class="icon_documents_alt icon"></span> -->
+                            <!-- <span><img style="width:50px" src="assets/images/logo_small.png" alt=""></span> -->
+                            <span class="text-highlight text-bold"> <i>FDA</i> </span> <span style="text-transform:initial !important; color:#fff" >Food Delivery App</span>
+                            <!-- <img style="Width:100px" src="assets/images/logo.png" alt=""> -->
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Start</li>
+                </ol>
+                
+                <div class="top-search-box">
+	                 <form class="form-inline search-form justify-content-center" action="" method="get">
+	            
+			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+			            
+			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+			            
+			        </form>
+                </div>
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Food Delivery App - Documentation</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: MAY 24th, 2022 | Email us at <b style="color:black">sushilasaharan9988@gmail.com</b>
+ for any help</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Backend   Installation</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Server Prerequisites</h3>
+                                    <p>
+                                            The Laravel structure has a couple of framework prerequisites.You should ensure your server meets the accompanying necessities:
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <h6>Prerequisites</h6>
+                                            <ul class="list">
+                                                <li> PHP >= 8.0 </li>
+                                                <li> BCMath PHP Extension </li>
+                                                <li> CType PHP Extension </li>
+                                                <li> JSON PHP Extension </li>
+                                                <li> Mbstring PHP Extension </li>
+                                                <li> OpenSSL PHP Extension </li>
+                                                <li> PDO PHP Extension </li>
+                                                <li> Tokenizer PHP Extension </li>
+                                                <li> XML PHP Extension </li>
+                                                <li> Allow URL F-Open </li>
+                                                <li> PHP EXIF PHP Extension </li>
+                                             </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="step2"  class="section-block">
+                                    <h3 class="block-title">Setup Database</h3>
+                                    <p> <b>1. </b> To setup the database of admin panel on the server, Login into the cPanel with your credentials on </p>
+                                    <p> <b>2. </b> After a successful login, click on “MySQL Databases” and create a database.</p>
+                                    <img class="scr" src="assets/images/1.png" alt="documentation-screenshot">
+                                    <p> <b>3. </b> Enter a database name (like fda_admin) and click on create database button.</p>
+                                    <img class="scr" src="assets/images/3.png" alt="documentation-screenshot">
+                                    <p> <b>4. </b>Scroll down on the same page and click on MySQL Users to create a user for the database.</p>
+                                    <p>Geanerate a strong password and save it securely somewhere. We will use the <b class="text-primary">Database name, Database Username and Password</b> ahed.
+                                    Make sure to save it.</p>
+                                    <img class="scr" src="assets/images/4.png" alt="documentation-screenshot">
+
+                                    <p><b>5. </b>Now we need to assign the user to the Database.</p>
+                                    <ul>
+                                        <li>Scroll down on the same age and click on the  Add user to Database</li>
+                                        <li>Select your Username from the user options and database from the Database options </li>
+                                        <li>Click on the <b class="text-primary"> Add </b> button</li>
+                                    </ul>
+                                    <img class="scr" src="assets/images/5.png" alt="documentation-screenshot">
+
+                                    <p><b>6. </b>After clicking the Add button a new page will be presented.</p>
+                                    <ul>
+                                        <li>Click on <b class="text-primary">All Privillages</b></li>
+                                        <li> Make sure all the Checkboxes are checked </li>
+                                        <li>Now click on <b class="text-primary">Make Changes</b> Button</li>
+                                    </ul>
+                                    <img class="scr" src="assets/images/6.png" alt="documentation-screenshot">
+                                </div>
+                                <div id="step3"  class="section-block">
+                                    <h3 class="block-title">Setup Admin Panel</h3>
+                                    <p>After making the database and assigning user to it, we need to upload out admin panel files to the server file manages and integrate with the Database.
+                                    </p>
+                                    <p>Here we will need the downloaded admin zip file.</p>
+                                    <ul>
+                                        <li>Login to the cPanel</li>
+                                        <li>Click on the <b class="text-primary">File Manager option</b></li>
+                                    </ul>
+                                    <img class="scr" src="assets/images/7.jpg" alt="documentation-screenshot">
+                                    <p><b class="text-primary">Double Click</b> on the <b class="text-primary">public_html</b> folder.</p>
+                                    <img class="scr" src="assets/images/8.jpg" alt="documentation-screenshot">
+                                    <p>Now you are in the public_html directory </p>
+                                    <p>Click on the upload option.</p>
+                                    <img class="scr" src="assets/images/9.jpg" alt="documentation-screenshot">
+                                    <p>A new tab will be opened.</p>
+                                    <p>Now on your computer open the Downloaded zip file and make zip archive of the <b class="text-primary">admin folder</b></p>
+                                    <img class="scr" src="assets/images/11.jpg" alt="documentation-screenshot">
+                                    <p>After making the zip file of the admin folder</p>
+                                    <p>Come back to the browser and upload the <b class="text-primary">admin.zip</b> to the server</p>
+                                    <img class="scr" src="assets/images/10.jpg" alt="documentation-screenshot">
+                                    <p>After uploading the file click on the <b class="text-success"> Go Back to “/home/user/public_html”</b> link on the same page</p>
+                                    <p>This will let you in to the <b class="text-primary">public_html</b> folder</p>
+                                    <p>(or you can go to <b class="text-primary">cPanel>File Manager>public_html</b> folder)</p>
+                                    <p>Click on the <b class="text-primary">Reload</b> option  from top menu </p>
+                                    <p>Now you will se that uploaded <b class="text-primary">admin.zip</b> fie </p>
+                                    <p><b class="text-primary">Right Click on that</b> and click on <b class="text-primary">extract</b></p>
+                                    <p>This will take less than a minute.</p>
+                                    <img class="scr" src="assets/images/12.jpg" alt="documentation-screenshot">
+                                    <img class="scr" src="assets/images/13.jpg" alt="documentation-screenshot">
+                                    <p>Once the zip is extracted click on close.</p>
+                                    <p>Click on the <b class="text-primary">Reload</b> option  from top menu </p>
+                                    <p>You will see <b class="text-primary">admin</b> folder</p>
+                                    <p>Double click on that to open</p>
+                                    <img class="scr" src="assets/images/14.jpg" alt="documentation-screenshot">
+                                    <p>Now you will se number on files and folders</p>
+                                    <p>Click on the <b class="text-primary">Select All</b> option from the top menu</p>
+                                    <p>After all the filse selected, click on the <b class="text-primary">Move</b> option from the top menu</p>
+                                    <p>Now make sure the path under the box is <b class="text-primary">/public_html/</b></p>
+                                    <p>click on <b class="text-primary">Move</b> button</p>
+                                    <img class="scr" src="assets/images/15.jpg" alt="documentation-screenshot">
+                                    <p>Now Click on the public_html option from the left menu</p>
+                                    <p>Now Double Click on the <b class="text-primary">local</b> folder</p>
+                                    <img class="scr" src="assets/images/17.jpg" alt="documentation-screenshot">
+                                    <p>Right click on the <b class="text-primary">.env</b> file</p>
+                                    <p>click on <b class="text-primary">edit</b> option</p>
+                                    <img class="scr" src="assets/images/18.jpg" alt="documentation-screenshot">
+                                    <p>Enter the <b class="text-primary">Database Name, Username, Password </b>that we have saved already somewhere.</p>
+                                    <p>After enterning the database details click on the save option on the top.</p>
+                                    <p>We are almost done only one thing (<b class="text-primary">importing database</b>) is remaining to use the app.</p>
+                                </div>
+                                <hr>
+                                <div id="step4"  class="section-block">
+                                    <h3 class="block-title">Importing sql file to the Database</h3>
+                                    <p> <b>1. </b> To import the sql file, Login into the cPanel with your credentials</p>
+                                    <p> <b>2. </b> After a successful login, click on <b class="text-primary">phpMyAdmin</b> and create a database.</p>
+                                    <img class="scr" src="assets/images/20.jpg" alt="documentation-screenshot">
+                                    <p>A new tab will be opened.</p>
+                                    <p><b>1. </b>Click on your username from the right panel.</p>
+                                    <p><b>2. </b>Click on the database name from the right panel.</p>
+                                    <p><b>3. </b>Click on the <b class="text-primary">import</b> button from the top options.</p>
+                                    <p><b>4. </b>Click on the <b class="text-primary">choose file</b> button from the top options.</p>
+                                    <p>Now open the downloaded folder on your computer. Open the sql folder and you will see a <b class="text-primary">app_name.sql</b> (example name) file.</p>
+                                    <p>import this <b class="text-primary">.sql</b> file to phpMyadmin on the server</p>
+                                    <img class="scr" src="assets/images/21.jpg" alt="documentation-screenshot">
+                                  
+                                </div>
+                                <div class="callout-block callout-success">
+                                    <div class="icon-holder">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </div><!--//icon-holder-->
+                                    <div class="content">
+                                        <h4 class="callout-title">Congratulations</h4>
+                                        <p>We are done with the setup of <b class="text-dark">Admin Panel.</b></p>
+                                        <p>Now open your domain url in the browser to run the website.</p>
+                                    </div><!--//content-->
+                                </div><!--//callout-block-->
+                            </section><!--//doc-section-->
+                            
+                            <section id="mobile_app" class="doc-">
+                                <h2 class="section-title">Mobile App Installation</h2>
+
+                                <div id="install_ionic" class="section-block">
+                                <p>Our mobile apps are built in ionic framework over angular.</p>
+                                <p> It is an open source mobile toolkit for building high quality, cross-platform native and web app experiences.</p>
+                                <p>To make changes and build our app we need to install the <b class="text-primary">ionic cli</b> and <b class="text-primary">Angular</b> in our local machine.</p>
+                                <p>Before proceeding we need to make sure that Node.js is installed in our system.</p>
+                                <p>To install Node.js follow <a target="_blank" href="https://nodejs.org/en/">this link</a> and download the installer for your system.</p>
+                                <p>After downloading the installer open and install it by hitting the next next buttons.</p>
+                                <p>After installing successfully, open your terminal or command prompt and enter this command <code>node --version</code></p>
+                                <p>If it is showing a version instead of an error, it is installed successfully.</p>
+                                <img class="scr" src="assets/images/27.jpg" alt="documentation-screenshot">
+                                <p>Now we need to install <b class="text-primary">ionic cli</b></p>
+                                <p>In the terminal run this command <code>npm install -g @ionic/cli</code></p>
+                                <p>This will install the ionic cli in your system.</p>
+                                <p>Chek the installation by running this command in your terminal <code>ionic --version</code></p>
+                                <img class="scr" src="assets/images/28.jpg" alt="documentation-screenshot">
+                                <hr>
+
+                                <h3 id="install_angular" class="text-primary">Installing Angular cli</h3>
+                                <p>After installing the Node.js and Ionic Cli we need to install Angular Cli.</p>
+                                <p>Run this command in your terminal <code>npm install -g @angular/cli</code></p>
+                                <p>Chek the installation by running this command in your terminal <code>ng --version</code></p>
+                                <img class="scr" src="assets/images/29.jpg" alt="documentation-screenshot">
+                                <hr>
+                                <h3 id="install_sdk" class="text-primary">Setup Android Studio / SDK</h3>
+                                <p>Android Studio is the IDE for creating native Android apps. It includes the Android SDK, which will need to be configured for use in the command line.</p>
+                                <p>We will build the apps using the Android sdk.</p>
+                                <p>Follow <a target="_blank" href="https://ionicframework.com/docs/developing/android" class="text-primary">this link </a>to setup Android sdk</p>
+                                </div>
+                                <hr>
+
+                                <h3 id="install_map" class="text-primary">Setup Google Map</h3>
+                                <p>We have used <b class="text-primary">Google Maps</b> in the Delivery and User app for getting users location, live tracking of orders and other features.</p>
+                                <p>In order to use google maps in our app, we must have google maps keys with the following permissions</p>
+                                <ol>
+                                    <li>Geocoding API</li>
+                                    <li>Places API</li>
+                                    <li>Maps JavaScript API</li>
+                                    <li>Distance Matrix API</li>
+                                    <li>Directions API</li>
+                                </ol>
+                                <p>You can find and create keys at google cloud console visit this <a target="_blank" href="https://console.cloud.google.com/google/maps-apis/start?pli=1">https://console.cloud.google.com/google/maps-apis/start?pli=1</a></p>
+                                <p>Create A new project with your app name and in the api section enable all the api's mentioned above.</p>
+                                <p>Get the <b class="text-primary">Api key</b> from the <b class="text-danger">Credentials</b> Section and save it somewhere.</p>
+                                <p>Your Api key will look like this <b class="text-primary">AIzaSyDt_NAbS47BDdoiwYOakKdik7RUuv9usrPrtuJg</b> (example key) </p>
+                                <p>After we have enabled all the mentioned api's we need to integrate this api key to our <b class="text-primary">User</b> and <b class="text-primary">Delivery</b> App.</p>
+                                <p><b>1. </b>Go to the project folder <code>fda/app_code/user/src/index.html</code></p>
+                                <p><b>2. </b>Open the index.html in the code editor and replace your <b class="text-primary">Api Key</b> as mentioned below.</p>
+                                <p><b class="text-primary">Save the files after making changing them</b></p>
+                                <img class="scr" src="assets/images/30.jpg" alt="documentation-screenshot">
+                                <p><b>3. </b>Do the same with <b class="text-primary">Delivery App</b>.</p>
+                                <p>Go to folder <code>fda/app_code/delivery/src/index.html</code> and replace the key.</p>
+                                <p>We are done with the setup on Google Map Api in our User and Delivery App.</p>
+                                <hr>
+
+                                <h3 id="install_app_api" class="text-primary">Setup App Api in Apps</h3>
+                                <p>Now we need to integrate the backend api's to our apps</p>
+                                <p>Lets do it in the User app first.</p>
+                                <p>Go to <code>fda/app_code/user/src/app/service/server.service.ts</code></p>
+                                <p>Change the api url with your url with a suffix <b class="text-primary">/api/</b> as mentioned below</p>
+                                <img class="scr" src="assets/images/31.jpg" alt="documentation-screenshot">
+                                <p>Do the same in the <b class="text-primary">Delivery App</b> in <code>fda/app_code/delivery/src/app/service/server.service.ts</code></p>
+                                <p>Do the same in the <b class="text-primary">Store App</b> in <code>fda/app_code/store/src/app/service/server.service.ts</code></p>
+                                <p><b class="text-primary">Save the files after making changing them</b></p>
+                                <p>After setting up this in all our apps we are done with the setup of api's in our app.</p>
+                            </section>
+                            <hr>
+
+                            <section id="build_mobile_app" class="doc-">
+                                <h2 class="section-title">Build Mobile Apps</h2>
+                                <p>Change the <b class="text-primary">Widget id, App Name, Description</b> in <code>fda/app_code/user/config.xml</code> as mentioned below.</p>
+                                <p>Your widget id will be like this <b class="text-primary"> io.starter.fda_user</b> (this needs to be without space)</p>
+                                <p>Your name will be like this <b class="text-primary"> FDA User</b></p>
+                                <p>Your description will be like this <b class="text-primary"> FDA User App</b></p>
+                                <img class="scr" src="assets/images/32.jpg" alt="documentation-screenshot">
+                                <div id="build_android" class="section-block">
+                                    <h3 class="text-primary">Building App for Android</h3>
+                                <p><b>1. </b>open this folder in your terminal <code>fda/app_code/user/</code></p>
+                                <p><b>2. </b>open this folder in your terminal <code>npm install</code></p>
+                                <p><b>2. </b>Run this command in the termninal <code>ionic cordova platform add android</code></p>
+                                <p>This will install android platform for anroid in the user app</p>
+                                <p><b>n3. </b>Now we need to generate <b class="text-primary">App Icon and Splashscreen</b> for our app.</p>
+                                <p>Copy your app icon and splashscreen in <code>fda/app_code/user/resources</code></p>
+                                <p>The app icon name: <b>icon.png</b> size: <b>1024X1024px</b> format: <b>.png</b> should be this.</p>
+                                <p>The app splashscreen name: <b>splash.png</b> size: <b>2732X2732px</b> format: <b>.png</b> should be this.</p>
+                                <p><b>2. </b>Run this command in the termninal <code>ionic cordova resources android</code></p>
+                                <p class="text-danger">If this command giving an error run the command again.</p>
+                                <p>4. Now run this command to build apk <code>ionic cordova build android --prod --release</code></p>
+                                <p>You can find this apk with name <b>app-release-unsigned.apk</b> in <br><br><code>fda/app_code/user/platforms/android/app/build/outputs/apk/release</code></p>
+                                <p><b>5. </b> copy this <b>app-release-unsigned.apk</b> to <code>fda/app_code/user/</code></p>
+                                <p><b>6. </b> After placing this apk to the user folder wee need to generate a keystore file.</p>
+                                <p><b>7. </b> Run this command in the terminal <code>keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000</code></p>
+                                <p><b>8. </b> Enter the required fields and passwords make sure to remember this.We will user these details in publishing the apk.</p>
+                                <p><b>9. </b> Now wee need to sign our apk</p>
+                                <p><b>10.</b>Run this command <code>jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore app-release-unsigned.apk alias_name</code></p>
+                                <p>Your apk will be signed.</p>
+                                <p><b>11. </b> Go to <code>fda/app_code/user/app-release-unsigned.apk</code> and rename this with app name like fda-user.apk</p>
+                                <p>Now You can test this apk by sending and installing in your android device.</p>
+                                <p>Do the same thing from <b class="text-primary"><a href="#build_android">Step 1</a></b> with same commands for store and delivery apps.</p>
+                            </div>
+                                
+                            <div id="build_pwa" class="section-block">
+                                <h3 class="text-primary">Building PWA</h3>
+                                <p><b>1. </b> After building the apk open this folder in your terminal <code>fda/app_code/user/</code></p>
+                                <p><b>2. </b>Run this command <code>ng add @angular/pwa</code></p>
+                                <p><b>3. </b>After this run this command <code>ionic build --prod</code></p>
+                                <p>Now You can find the user pwa with name <b class="text-primary">www</b> folder in the current directory.</p>
+                            </div>
+                            </section>
+                            <hr>
+                            
+                            <section id="onesignal" class="doc-">
+                                <h2 class="section-title">Setup Push Notifications</h2>
+                                <div id="onesignal" class="section-block">
+                                    <h3 class="text-primary">Setup OneSignal</h3>
+                                    <p>For push notications in all our apps we used OneSignal Push Notificateion Service.</p>
+                                    <p>First go to  this link <a target="_blank" href="https://onesignal.com/">https://onesignal.com/</a> and do signup/Login.</p>
+                                    <p>Click on the <b class="text-primary">New App/Website</b></p>
+                                    <img class="scr" src="assets/images/33.jpg" alt="documentation-screenshot">
+                                    <p>Click on the <b class="text-primary">New App/Website</b></p>
+                                    <p>Enter the app name like FDA User App</p>
+                                    <p>Select the <b class="text-primary">Google Android (FCM)</b> option.</p>
+                                    <p>Click on the <b class="text-primary">Next</b> Button</p>
+                                    <img class="scr" src="assets/images/34.jpg" alt="documentation-screenshot">
+                                    <p>Now wee need to enter Google Firebase<b class="text-primary"> Sender ID and Server Key</b>.</p>
+                                    <img class="scr" src="assets/images/35.jpg" alt="documentation-screenshot">
+                                    <p>For this click on the link <a target="_blank" href="https://console.firebase.google.com/">Copy from your Firebase Console</a>.</p>
+                                    <p>Signup/Login with your google account.</p>
+                                    <p>Create New Project with same name like FDA User APP.</p>
+                                    <img class="scr" src="assets/images/36.jpg" alt="documentation-screenshot">
+                                    <p>After Creating the project create on the settings icon from left panel and select <b>Project Settings</b></p>
+                                    <p>Now click on <b>Cloud Messaging Section from top options</b></p>
+                                    <p>Copy The <b>Sender ID and Server Key</b>and paste into the Onesignal project respectively.</p>
+                                    <img class="scr" src="assets/images/37.jpg" alt="documentation-screenshot">
+                                    <p>Click on save</p>
+                                    <p>Now Select Ionic and Save.</p>
+                                    <img class="scr" src="assets/images/38.jpg" alt="documentation-screenshot">
+                                    <p>Do the same steps for Delivery and Store Apps </p>
+                                    <p>After doing these we have successfully created Onesignal Api's for our Apps. We will use these keys in our Admin Panel to integrate with our mobile apps.</p>
+
+                                </div>
+                            </section>
+
+                            <!-- //Admin Panel starts here -->
+
+                            <section id="admin_panel" class="doc-section">
+                                <h2 class="section-title">Admin Panel</h2>
+                                <div id="admin_panel" class="section-block">
+                                <p>To access the admin panel, open your website url with <b class="text-primary">'/login'</b></p>
+                                <p>eg. <b class="text-primary">fooddelivery.com/login</b></p>
+                                <p>A login page will presented</p>
+                                <p>The default username is: <b class="text-primary">admin</b> and the password is: <b class="text-primary">google123</b> </p>
+                                <img class="scr" src="assets/images/22.jpg" alt="documentation-screenshot">
+                                <p class="text-success">Now you can see the dashboard of the admin panel.</p>
+                                <img class="scr" src="assets/images/23.jpg" alt="documentation-screenshot">
+                                </div>
+                                
+                                <div id="dashboard" class="section-block">
+                                    <p>Here you can see the <b class="text-primary">Total Stores, App Users, Total Orders, Delivery Staff.</b></p>
+                                    <p>you can get reports of orders and stores.</p>
+                                    <p>You can change the admin panel <b class="text-primary">Language</b> and can use the admin panel in fullscreen</p>
+                                    <img class="scr" src="assets/images/24.jpg" alt="documentation-screenshot">  
+                                    <h2 id="admin_settings" class="text-primary mt-4">Admin Settings</h2>
+                                    <p>Here you can update <b class="text-primary">Admin Settings, Mobile App Settings, Payment Gateways Api, Push Notification Api.</b></p>
+                                    <img class="scr" src="assets/images/25.jpg" alt="documentation-screenshot">
+
+                                    <h2 class="text-primary mt-4">Onesignal Api key</h2>
+                                    <p>We Need to add OneSignal Api key and Firebase Sender ID to integrate our apps with push notifications.</p>
+                                    <img class="scr" src="assets/images/62.jpg" alt="documentation-screenshot">
+                                    <p>Login to your <b>OneSignal Account</b> <a target="_blank" href="https://app.onesignal.com/login">https://app.onesignal.com/login</a></p>
+                                    <p>Click on your app name like fda_user</p>
+                                    <p>Click on Settings from top menu</p>
+                                    <p>Select on Keys and Ids from top menu</p>
+                                    <p>Copy the OneSignal App ID and Rest API Key and paste it to the admin panel push notifications for User App</p>
+                                    <img class="scr" src="assets/images/63.jpg" alt="documentation-screenshot">
+
+                                    <p>Now we need Firebase Sender Id</p>
+                                    <p>Log in to <a target="_blank" href="https://console.firebase.google.com/">https://console.firebase.google.com/</a>Select your project</p>
+                                    <p>Click on Settings>Project Settings>Cloud Messaging</p>
+                                    <p>Copy the Sender ID and paste it to the admin settings for user app</p>
+                                    <img class="scr" src="assets/images/64.jpg" alt="documentation-screenshot">
+                                    <p>Do the same for the Delivery and Store App</p>
+                                    <p><b>Note: </b> We need to create 3 projects for each in onesignal and firebase like user_app, delivery_app, store_app and we need to enter the keys of each project to the admin settings</p>
+                                    <p><a href="#onesignal"><b>Make sure to follow this</b></a></p>
+                                    <p>After entering the information re-enter the current password and click on <b class="text-primary">Save</b> Button</p>
+                                    <img class="scr" src="assets/images/26.jpg" alt="documentation-screenshot">
+                             
+                                </div>
+                                <div id="app_lang" class="section-block">
+                                    <h2 class="text-primary mt-4">App Language</h2>
+                                    <p>Here you can manage <b class="text-primary">App Languages</b> for the mobile apps</p>
+                                    <img class="scr" src="assets/images/40.jpg" alt="documentation-screenshot">  
+                                    <img class="scr" src="assets/images/39.jpg" alt="documentation-screenshot">
+                                </div>
+                                <div id="store" class="section-block">
+                                    <h2 id="store_cate" class="text-primary mt-4">Store Category</h2>
+                                    <p>Before adding stores, we have to make categoies for them.</p>
+                                    <img class="scr" src="assets/images/41.jpg" alt="documentation-screenshot">  
+                                    <img class="scr" src="assets/images/42.jpg" alt="documentation-screenshot">
+
+                                    <h2 id="add_store" class="text-primary mt-4">Add New Store</h2>
+                                    <p>Now We can add new Stores</p>
+                                    <p>Click on <b>Store</b> > <b>Add new</b></p>
+                                    <p>Enter the required store Details and click on <b>Save</b></p>
+                                    <p>You can add other languages text by clicking on the languages options add the translated text and save it.</p>
+                                    <img class="scr" src="assets/images/43.jpg" alt="documentation-screenshot">
+                                    <img class="scr" src="assets/images/44.jpg" alt="documentation-screenshot">
+                                    <img class="scr" src="assets/images/45.jpg" alt="documentation-screenshot">
+
+                                    <h2 id="manage_store" class="text-primary mt-4">Manage Stores</h2>
+                                    <p>After adding stores we can manage them.</p>
+                                    <p>We have Multiple options here</p>
+                                    <p>We can <b>Generate QR Code For that store</b>, <b>make the store trending</b>, <b>change store status</b>, <b>Edit,Delete.</b></p>
+                                    <img class="scr" src="assets/images/46.jpg" alt="documentation-screenshot">
+
+                                    <h2 id="login_store" class="text-primary mt-4">Login as Store</h2>
+                                    <p>To manage a particular store we have to log in to that store</p>
+                                    <p>Click on the <b>Login as Store</b> option next to the store</p>
+                                    <!-- <p>Enter the store username(phone) and password to login.</p> -->
+                                    <img class="scr" src="assets/images/47.jpg" alt="documentation-screenshot">
+                                    <p>Now you can see the store's dashboard</p>
+                                    <img class="scr" src="assets/images/48.jpg" alt="documentation-screenshot">
+
+                                    <h2 id="product_cate" class="text-primary mt-4">Product Categories</h2>
+                                    <p>Before adding products, we need to add <b>Product Categories</b> first</p>
+                                    <p>This Categories are only for this logged in store</p>
+                                    <img class="scr" src="assets/images/49.jpg" alt="documentation-screenshot">
+                                    <img class="scr" src="assets/images/50.jpg" alt="documentation-screenshot">
+                                    <p>Enter the <b>Name, Sort Order</b> and <b>Status</b></p>
+                                    <p>Click on save</p>
+                                    <p>If You have added other <b>App Languages</b>, make sure to update the category name in other languages as well.</p>
+                                    
+
+                                    <h2 id="add_product" class="text-primary mt-4">Add New Products</h2>
+                                    <p>After adding product categories we can add new products to the store.</p>
+                                    <p>Click on the <b>Product</b> from left menu</p>
+                                    <p>Click on <b>Add New</b></p>
+                                    <img class="scr" src="assets/images/51.jpg" alt="documentation-screenshot">
+                                    <p>Enter the products details.</p>
+                                    <img class="scr" src="assets/images/52.jpg" alt="documentation-screenshot">
+                                    <p>If you have other app languages, make sure to add the product basic details in other languages also.</p>
+                                    <p>If you are not seeing the units for the products, make sure you have added the units in the store settings</p>
+                                    <img class="scr" src="assets/images/53.jpg" alt="documentation-screenshot">
+                                    <p>Enter the required product details and click on save.</p>
+                                    <img class="scr" src="assets/images/54.jpg" alt="documentation-screenshot">
+                                    
+
+                                    <h2 id="addon_cate" class="text-primary mt-4">Addon Categories</h2>
+                                    <p>Before adding <b>Addons to Products</b>, we need to add addon categories and addon first.</p>
+                                    <p>Click on <b>Addon Category</b> from the left menu</p>
+                                    <img class="scr" src="assets/images/55.jpg" alt="documentation-screenshot">
+                                    <p>Enter the addon category name, status and sort order,type and save</p>
+                                    <p>Enter the addon category name in other languages also and save</p>
+                                    <img class="scr" src="assets/images/56.jpg" alt="documentation-screenshot">
+                                    
+
+                                    <h2 id="add_addon" class="text-primary mt-4">Add New Addons</h2>
+                                    <p>After adding addon categories, we can add new addons after that we can assign them to the products</p>
+                                    <p>Enter the addon name, category, price and save it.</p>
+                                    <img class="scr" src="assets/images/57.jpg" alt="documentation-screenshot">
+                                    <img class="scr" src="assets/images/58.jpg" alt="documentation-screenshot">
+                                    
+
+                                    <h2 id="assign_addon" class="text-primary mt-4">Assign Addons to Products</h2>
+                                    <p>After adding addon categories, and addons we can assign them to the products</p>
+                                    <p>Click on the addon icon next to the product and ceck mark the addons you want to add to this product and click on save.</p>
+                                    <img class="scr" src="assets/images/59.jpg" alt="documentation-screenshot">
+                                    <img class="scr" src="assets/images/60.jpg" alt="documentation-screenshot">
+
+                                    <h2>Others</h2>
+                                    <p>You can explore the other features as well they all are easy to use.</p>
+                                    <img class="scr" src="assets/images/61.jpg" alt="documentation-screenshot">
+                                </div>
+
+                            </section>
+
+                    </div>
+                    </div>
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+                            <!-- menu navigation nav  -->
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <!-- <a class="nav-link scrollto" href="#download-section">Download</a> -->
+	                                <a class="nav-link scrollto" href="#installation-section">Backend Installation</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#step1">Server Prerequisites</a>
+                                        <a class="nav-link scrollto" href="#step2">Setup Database</a>
+                                        <a class="nav-link scrollto" href="#step3">Setup Admin Panel</a>
+                                        <a class="nav-link scrollto" href="#step4">Import sql File</a>
+                                    </nav>
+	                                <a class="nav-link scrollto" href="#mobile_app">Mobile App Installation</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#install_ionic">Installing Ionic</a>
+                                        <a class="nav-link scrollto" href="#install_angular">Installing Angular</a>
+                                        <a class="nav-link scrollto" href="#install_sdk">Setup Android sdk</a>
+                                        <a class="nav-link scrollto" href="#install_map">Setup Google Map</a>
+                                        <a class="nav-link scrollto" href="#install_app_api">Setup App Api</a>
+                                    </nav>
+	                                <a class="nav-link scrollto" href="#build_mobile_app">Build Mobile App</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#build_android">Build Application fo Android</a>
+                                        <a class="nav-link scrollto" href="#build_pwa">Build PWA (Website)</a>
+                                        <!-- <a class="nav-link scrollto" href="#build_ios">Build Application fo ios</a> -->
+                                    </nav>
+
+	                                <a class="nav-link scrollto" href="#onesignal">Setup Push Notification</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#onesignal">Setup Onesignal Api</a>
+                                    </nav>
+
+	                                <a class="nav-link scrollto" href="#admin_panel">Admin Panel</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#dashboard">Dashboard</a>
+                                        <a class="nav-link scrollto" href="#admin_settings">Admin Settings</a>
+                                        <a class="nav-link scrollto" href="#app_lang">App Language</a>
+                                        <a class="nav-link scrollto" href="#store_cate">Store Categories</a>
+                                        <a class="nav-link scrollto" href="#add_store">Add Store</a>
+                                        <a class="nav-link scrollto" href="#manage_store">Manage Stores</a>
+                                        <a class="nav-link scrollto" href="#login_store">Login as Store</a>
+                                        <a class="nav-link scrollto" href="#product_cate">Product Categories</a>
+                                        <a class="nav-link scrollto" href="#add_product">Add Product</a>
+                                        <a class="nav-link scrollto" href="#addon_cate">Addon Categories</a>
+                                        <a class="nav-link scrollto" href="#add_addon">Add New Addons</a>
+                                        <a class="nav-link scrollto" href="#assign_addon">Assign Addons to Products</a>
+                                    </nav>
+	          
+
+
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+        
+        
+    </div><!--//page-wrapper-->
+    
+   
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
